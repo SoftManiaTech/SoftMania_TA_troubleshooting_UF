@@ -1,0 +1,114 @@
+
+# Application-level permissions
+
+[]
+access = read : [ * ], write : [ admin, power ]
+
+### EVENT TYPES
+
+[eventtypes]
+export = system
+
+
+### PROPS
+
+[props]
+export = system
+
+
+### TRANSFORMS
+
+[transforms]
+export = system
+
+
+### LOOKUPS
+
+[lookups]
+export = system
+
+
+### VIEWSTATES: even normal users should be able to create shared viewstates
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+
+[app/ui]
+version = 9.1.0.1
+modtime = 1710553244.654788000
+
+[app/launcher]
+version = 9.1.0.1
+modtime = 1710553244.656015000
+
+[indexes/softmania_one_idx]
+owner = admin
+version = 9.1.0.1
+modtime = 1710554819.364018000
+
+[indexes/softmania_two_idx]
+owner = admin
+version = 9.1.0.1
+modtime = 1710554833.318926000
+
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Fscript_one.sh]
+owner = admin
+version = 9.1.0.1
+modtime = 1710554996.413558000
+
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Fscript_two.sh]
+owner = admin
+version = 9.1.0.1
+modtime = 1710556198.185186000
+
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Flogs_generator_web_access.sh]
+owner = admin
+version = 9.1.0.1
+modtime = 1710560625.351131000
+
+[props/log_generator]
+owner = admin
+version = 9.1.0.1
+modtime = 1710560875.087280000
+
+[indexes/softmania_three_idx]
+owner = admin
+version = 9.1.0.1
+modtime = 1710561356.236848000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Fresource_utilization.log]
+owner = admin
+version = 9.1.0.1
+modtime = 1710561508.506884000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Fapi_entries.log]
+owner = admin
+version = 9.1.0.1
+modtime = 1710561626.379587000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Fweb_access_logs.log]
+owner = admin
+version = 9.1.0.1
+modtime = 1710561700.261421000
+
+[indexes/softmania_four_idx]
+owner = admin
+version = 9.1.0.1
+modtime = 1710571327.331756000
+
+[props/softmania_json]
+owner = admin
+version = 9.1.0.1
+modtime = 1710571428.724639000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FSoftMania_TA_troubleshooting%2Fbin%2Fpeople_list.json]
+owner = admin
+version = 9.1.0.1
+modtime = 1710571443.634705000
+
+[views/softmania_troubleshooting_demo]
+owner = admin
+version = 9.1.0.1
+modtime = 1710573289.301094000
